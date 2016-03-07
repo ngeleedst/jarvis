@@ -1,10 +1,12 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE); // or simply error_reporting(~E_NOTICE);
 date_default_timezone_set('Europe/Amsterdam');
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug;
 
-umask(0000);
+//umask(0000);
+
 
 /**
  * @var Composer\Autoload\ClassLoader $loader

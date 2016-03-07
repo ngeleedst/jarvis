@@ -1,0 +1,21 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 192.168.1.70
+    database_port: 3306
+    database_name: jarvis
+    database_user: root
+    database_password: NOS1mikte
+    database_driver: pdo_mysql
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 8b93b8ee85a77027bae017140262138ec875ea5c
+    instagram:
+        apiKey: e69850d01ef1446390298da3172b813d
+        apiSecret: 49c55e810e514fb5b2fd59752db5640e
+        apiCallback: localhost
+    youtube:
+        key: AIzaSyAZ8ksBdJLNXEEBw1_VgvBL2xViUjEcguc
+
