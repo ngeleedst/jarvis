@@ -1,7 +1,10 @@
 $(function() {
+
+    var apiEndpoint = $('base').attr('href') + 'api';
+
     function loadTemperatures(){
 
-        var jqxhr = $.get( "http://localhost/jarvis/web/api",  function(data) {
+        var jqxhr = $.get( apiEndpoint,  function(data) {
         })
             .done(function(data) {
                 loadMorris(data)
