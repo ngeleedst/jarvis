@@ -1,7 +1,7 @@
 $(function() {
     function loadTemperatures(){
 
-        var jqxhr = $.get( "http://localhost/home-automation/web/api",  function(data) {
+        var jqxhr = $.get( "http://localhost/jarvis/web/api",  function(data) {
         })
             .done(function(data) {
                 loadMorris(data)
@@ -19,7 +19,7 @@ $(function() {
             xkey: 'date',
             ykeys: ['degree'],
             labels: ['Temp'],
-            pointSize: 2,
+            pointSize: 1,
             hideHover: 'auto',
             resize: true
         });

@@ -101,8 +101,8 @@ class Temperature
         return
             [
                 'id' => $this->getId(),
-                'degree' => $this->getDegree(),
-                'date' => $this->getDate()->format('Y-m-d h:i:s')
+                'degree' => number_format($this->getDegree(), 2),
+                'date' => $this->getDate()->format('Y-m-d H:i:s')
             ];
     }
 }

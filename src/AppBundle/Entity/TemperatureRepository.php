@@ -19,6 +19,7 @@ class TemperatureRepository extends EntityRepository
             ->setParameter('roomId', 1)
             ->setParameter('endRange', $now->format('Y-m-d H:i:s'))
             ->setParameter('startRange', $yesterday->format('Y-m-d H:i:s'))
+            ->setCacheable(true)
             ->getQuery();
     }
 
